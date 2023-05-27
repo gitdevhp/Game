@@ -4,8 +4,8 @@ body{
 #prompt{
     background-color: black;
     color: white;
-    text-align: right;
     width: 100px;
+    text-align: right;
 }
 #drug{
     background-color: darksalmon;
