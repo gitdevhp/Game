@@ -29,7 +29,7 @@ function baseBuy(){
     cash=cash-25000;
     genRate=1;
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
-    document.getElementById("mini").innerHTML='Buy Small Drug Store';
+    document.getElementById("mini").innerHTML='Buy Small Drug Store'<br>'Small Humble Home';
     console.log("Base Set");
 }
 function buymini(){
