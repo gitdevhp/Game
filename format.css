@@ -5,6 +5,7 @@ body{
     background-color: black;
     color: white;
     text-align: right;
+    column-width: 200px;
 }
 #drug{
     background-color: darksalmon;
