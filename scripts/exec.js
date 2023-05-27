@@ -16,6 +16,7 @@ if (diaNum==0){
 else if(diaNum==1){
     document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
+   document.getElementById("mini").innerHTML='Buy Small Drug Store'<br>'Small Humble Home';
     baseCash();
     diaNum++;
 }
@@ -25,15 +26,12 @@ function baseCash(){
 cash=25000;
 document.getElementById("CashAmt").innerHTML= 'Money: ' + cash;
 }
+
 function baseBuy(){
-    cash=cash-25000;
+    cash-=25000;
     genRate=1;
-    document.getElementById("CashAmt").innerHTML='Money: '+cash;
-    document.getElementById("mini").innerHTML='Buy Small Drug Store'<br>'Small Humble Home';
-    console.log("Base Set");
-}
-function buymini(){
     miniB++;
+    document.getElementById("CashAmt").innerHTML='Money: '+cash;
     document.getElementById("mini").innerHTML='Small Drug Store: '+miniB;
-    cash=cash-25000;
+    console.log("Base Set");
 }
