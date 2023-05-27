@@ -12,7 +12,7 @@ var miniCost = 10;
 var mini = 1;
 //functions
 
-setInterval(generate,1000);
+setInterval(generate,10);
 
 function promptNext() {
 if (diaNum==0) {
@@ -29,6 +29,7 @@ else if(diaNum==1) {
     diaNum++;
 }
 else if(diaNum==2){
+    diaNum++
     document.getElementById("msg").innerHTML='>Let us buy some more small stores, its not much but its getting Gatsby closer to Daisy';
 }
 }
@@ -51,7 +52,7 @@ function baseBuy() {
 }
 
 function generate() {
-    cash+=genRate;
+    cash+=genRate/100;
     document.getElementById("CashAmt").innerHTML="Money: "+cash;
 }
 
