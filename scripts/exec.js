@@ -6,8 +6,7 @@ var cash = 0;
 var genRate=0;
 var miniB=0;
 //functions
-wait(1000);
-cash+=genRate;
+cash= setInterval(cash+=genRate,1000);
 function promptNext(){
 if (diaNum==0){
     document.getElementById("msg").innerHTML= '>If you are reading this letter, you have recived 25000 dollars of the amount Dan Cody supposedly gave to you in his will.';
@@ -38,7 +37,3 @@ function baseBuy(){
     console.log("Base Set");
 }
 }
-setInterval(function() {
-  cash+=genRate;  
-  document.getElementById("CashAmt").innerHTML = 'Money: '+cash;
-}, 1000);
