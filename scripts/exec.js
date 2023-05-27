@@ -52,7 +52,7 @@ function baseBuy() {
 }
 
 function generate() {
-    Math.round(cash+=genRate/100);
+    cash+=Math.round(genRate/100);
     document.getElementById("CashAmt").innerHTML="Money: "+cash;
 }
 
