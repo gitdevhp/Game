@@ -29,5 +29,6 @@ function baseBuy(){
     cash=cash-25000;
     genRate=1;
     document.getElementById("CashAmt").innterHTML='Money: '+cash;
+    
     console.log("Base Set");
 }
