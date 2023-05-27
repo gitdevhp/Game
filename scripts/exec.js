@@ -4,7 +4,6 @@ console.log("exec.js Loaded");
 var diaNum = 0;
 var cash = 0;
 var genRate=0;
-var miniB=0;
 
 //settings for prices
 var miniCost = 10;
@@ -60,6 +59,6 @@ function buyMini() {
         mini++;
         genRate++;
         miniCost*=1.1;
-        document.getElementById("minip2").innerHTML = "small drug store {"+miniCost+"} ["+mini+"]";
+        document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
     }
 }
