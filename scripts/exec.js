@@ -58,7 +58,7 @@ function buyMini() {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost*=1.1;
+        miniCost=Math.round(miniCost*1.1);
         document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
     }
 }
