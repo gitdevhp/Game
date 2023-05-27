@@ -8,7 +8,7 @@ body{
     height: 200px;
     text-align: left;
 }
-#mini{
+#drug{
     background-color: darksalmon;
     color: aqua;
     display:none;
