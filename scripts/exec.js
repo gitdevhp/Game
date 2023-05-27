@@ -28,6 +28,9 @@ else if(diaNum==1) {
     miniCost=25000;
     diaNum++;
 }
+else if(diaNum==2){
+    document.getElementById("msg").innerHTML='>Let us buy some more small stores, its not much but its getting Gatsby closer to Daisy';
+}
 }
 
 function baseCash() {
