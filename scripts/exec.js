@@ -10,12 +10,12 @@ var genRate;
 function promptNext(){
 if (diaNum==0){
     document.getElementById("msg").innerHTML= 'If you are reading this letter, you have recived 25000 dollars of the amount Dan Cody supposedly gave to you in his will.';
-    document.getElementById("msg").style.pageBreakAfter = 'dollars';
+  //  document.getElementById("msg").style.pageBreakAfter = 'dollars';
     diaNum++;
 }
 if(diaNum==1){
-    document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.';
-    document.getElementById("msg").style.pageBreakAfter = 'money.';
+    document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money.'<br>' Lets start by starting a small drug store.';
+   // document.getElementById("msg").style.pageBreakAfter = 'money.';
     baseCash();
     diaNum++;
 }
