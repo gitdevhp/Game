@@ -28,10 +28,12 @@ document.getElementById("CashAmt").innerHTML= 'Money: ' + cash;
 }
 
 function baseBuy(){
+    if(diaNum>1&&cash>=25000){
     cash-=25000;
     genRate=1;
     miniB++;
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
     document.getElementById("mini").innerHTML='Small Drug Store: '+miniB;
     console.log("Base Set");
+}
 }
