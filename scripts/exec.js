@@ -39,7 +39,6 @@ function baseBuy() {
     if(diaNum>1&&cash>=miniCost) {
     cash-=25000;
     genRate++;
-    miniB++;
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
     document.getElementById("minip2").style.display ="block";
     document.getElementById("mini").style.display = "none";
