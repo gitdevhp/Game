@@ -5,6 +5,9 @@ var diaNum = 0;
 var cash = 0;
 var genRate=0;
 var miniB=0;
+
+//settings for prices
+var miniCost = 10;
 //functions
 
 setInterval(generate,1000);
@@ -19,8 +22,8 @@ else if(diaNum==1) {
     document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
    document.getElementById("mini").style.display = "block";
-   document.getElementById("mini").innerHTML='Buy Small Drug Store and Small Humble Home';
-    baseCash();
+   baseCash();
+    miniCost=25000;
     diaNum++;
 }
 }
@@ -31,15 +34,17 @@ document.getElementById("CashAmt").innerHTML= 'Money: ' + cash;
 }
 
 function baseBuy() {
-    if(diaNum>1&&cash>=25000){
+    if(diaNum>1&&cash>=miniCost) {
     cash-=25000;
     genRate++;
     miniB++;
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
-    document.getElementById("mini").innerHTML='Small Drug Store: '+miniB;
+    document.getElementById("minip2").style.display ="block";
+    document.getElementById("mini").style.display = "none";
     console.log("Base Set");
 }
 }
+
 function generate() {
     cash+=genRate;
     document.getElementById("CashAmt").innerHTML="Money: "+cash;
