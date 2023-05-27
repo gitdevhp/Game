@@ -9,7 +9,7 @@ var genRate;
 
 function promptNext(){
 if (diaNum==0){
-    document.getElementById("msg").innerHTML= 'If you are reading this letter, you have recived 25000 dollars of the amount Dan Cody supposedly gave to you in his will.';
+    document.getElementById("msg").innerHTML= '>If you are reading this letter, you have recived 25000 dollars of the amount Dan Cody supposedly gave to you in his will.';
   //  document.getElementById("msg").style.pageBreakAfter = 'dollars';
     diaNum++;
 }

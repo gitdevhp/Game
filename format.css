@@ -1,7 +1,7 @@
 body{
     background-color:burlywood;
 }
-prompt{
+#prompt{
     background-color: black;
     color: white;
 }
