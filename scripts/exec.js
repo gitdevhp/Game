@@ -38,6 +38,7 @@ function baseBuy(){
     console.log("Base Set");
 }
 }
-setInterval(function() => {
+setInterval(function() {
   cash+=genRate;  
+  document.getElementById("CashAmt").innerHTML = 'Money: '+cash;
 }, 1000);
