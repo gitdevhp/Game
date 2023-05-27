@@ -11,5 +11,5 @@ body{
 #mini{
     background-color: darksalmon;
     color: aqua;
-    visibility: hidden;
+    display:none;
 }
