@@ -18,7 +18,7 @@ if (diaNum==0){
 else if(diaNum==1){
     document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
-   document.getElementByID("mini").style.visibility = 'visible';
+   document.getElementByID("mini").style.visibility = "visible";
    document.getElementById("mini").innerHTML='Buy Small Drug Store and Small Humble Home';
     baseCash();
     diaNum++;
