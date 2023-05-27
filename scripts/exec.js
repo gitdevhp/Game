@@ -13,7 +13,7 @@ if (diaNum==0){
   //  document.getElementById("msg").style.pageBreakAfter = 'dollars';
     diaNum++;
 }
-if(diaNum==1){
+else if(diaNum==1){
     document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.' +diaNum;
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
     baseCash();
