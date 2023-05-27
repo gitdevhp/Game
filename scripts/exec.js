@@ -4,7 +4,7 @@ console.log("exec.js Loaded");
 var diaNum = 0;
 var cash = 0;
 var genRate;
-
+var miniB=0;
 //functions
 
 function promptNext(){
@@ -28,7 +28,12 @@ document.getElementById("CashAmt").innerHTML= 'Money: ' + cash;
 function baseBuy(){
     cash=cash-25000;
     genRate=1;
-    document.getElementById("CashAmt").innterHTML='Money: '+cash;
-    
+    document.getElementById("CashAmt").innerHTML='Money: '+cash;
+    document.getElementById("mini").innerHTML='Buy Small Drug Store';
     console.log("Base Set");
+}
+function buymini(){
+    miniB++;
+    document.getElementById("mini").innerHTML='Small Drug Store: '+miniB;
+    cash=cash-25000;
 }
