@@ -14,7 +14,7 @@ if (diaNum==0){
     diaNum++;
 }
 if(diaNum==1){
-    document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money.'<br>' Lets start by starting a small drug store.' +diaNum;
+    document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.' +diaNum;
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
     baseCash();
     diaNum++;
