@@ -38,3 +38,6 @@ function baseBuy(){
     console.log("Base Set");
 }
 }
+setInterval(function() => {
+  cash+=genRate;  
+}, 1000);
