@@ -10,4 +10,5 @@ body{
 #drug{
     background-color: darksalmon;
     color: aqua;
+    visibility: hidden;
 }
