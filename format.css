@@ -1,14 +1,16 @@
-body{
+body {
     background-color:burlywood;
 }
-#prompt{
+
+#prompt {
     background-color: black;
     color: white;
     margin-left: 700px;
     height: 200px;
     text-align: left;
 }
-#mini{
+
+#mini {
     background-color: darksalmon;
     color: aqua;
     display:none;
