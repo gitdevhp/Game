@@ -40,7 +40,7 @@ function baseBuy() {
     cash-=25000;
     genRate++;
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
-    document.getElementById("minip2").style.display ="block";
+    //document.getElementById("minip2").style.display = "block";
     document.getElementById("mini").style.display = "none";
     console.log("Base Set");
 }
