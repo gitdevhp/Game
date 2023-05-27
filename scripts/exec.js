@@ -8,6 +8,9 @@ var miniB=0;
 
 //settings for prices
 var miniCost = 10;
+
+//tracker of stores
+var mini = 1;
 //functions
 
 setInterval(generate,1000);
@@ -48,4 +51,15 @@ function baseBuy() {
 function generate() {
     cash+=genRate;
     document.getElementById("CashAmt").innerHTML="Money: "+cash;
+}
+
+//buy drug stores
+function buyMini() {
+    if (cash>=miniCost) {
+        cash-=miniCost;
+        mini++;
+        genRate++;
+        miniCost*=1.1;
+        document.getElementById("minip2").innerHTML = "small drug store {"+miniCost+"} ["+mini+"]";
+    }
 }
