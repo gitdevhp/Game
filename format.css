@@ -6,7 +6,7 @@ body {
     background-color: black;
     color: white;
     margin-left: 700px;
-    height: 200px;
+    height: 25px;
     text-align: left;
 }
 
@@ -19,4 +19,8 @@ body {
     background-color: cornsilk;
     color: brown;
     display: none;
+}
+#NextBut {
+    background-color: chartreuse;
+    display: block;
 }

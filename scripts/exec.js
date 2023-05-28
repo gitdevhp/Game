@@ -31,6 +31,7 @@ else if(diaNum==1) {
 else if(diaNum==2&&cash<10){
     diaNum++
     document.getElementById("msg").innerHTML='>Let us buy some more small stores, its not much but its getting Gatsby closer to Daisy';
+    document.getElementById("NextBut").style.display='none';
 }
 }
 
