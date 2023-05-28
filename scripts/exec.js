@@ -4,7 +4,7 @@ console.log("exec.js Loaded");
 var diaNum = 0;
 var cash = 0;
 var genRate=0;
-
+var canPass = false;
 //settings for prices
 var miniCost = 10;
 
@@ -32,6 +32,7 @@ else if(diaNum==2&&cash<10){
     diaNum++
     document.getElementById("msg").innerHTML='>Let us buy some more small stores, its not much but its getting Gatsby closer to Daisy';
     document.getElementById("NextBut").style.display='none';
+    canPass=true;
 }
 }
 
@@ -59,7 +60,7 @@ function generate() {
 
 //buy drug stores
 function buyMini() {
-    if (cash>=miniCost) {
+    if (cash>=miniCost&&canPass) {
         cash-=miniCost;
         mini++;
         genRate++;
