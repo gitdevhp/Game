@@ -29,10 +29,15 @@ else if(diaNum==1) {
     diaNum++;
 }
 else if(diaNum==2&&cash!=25000){
-    diaNum++
+    diaNum++;
     document.getElementById("msg").innerHTML='>Let us buy some more small stores, its not much but its getting Gatsby closer to Daisy';
     document.getElementById("NextBut").style.display='none';
     canPass=true;
+}
+else if(diaNum==3){
+    diaNum++;
+    document.getElementById("msg").innerHTML='>Gatsby Hopes that earning money and being rich will reclaim Daisy for himself...';
+
 }
 }
 
