@@ -88,6 +88,8 @@ function buyMini() {
         genRate++;
         miniCost=Math.round(miniCost*2);
         document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
+        document.getElementById("NextBut").style.display='block';
+        canPass=false;
 
 }
 }
