@@ -60,7 +60,7 @@ function generate() {
 
 //buy drug stores
 function buyMini() {
-    if (cash>=miniCost&&canPass) {
+    if (cash>=miniCost&&canPass==true) {
         cash-=miniCost;
         mini++;
         genRate++;
