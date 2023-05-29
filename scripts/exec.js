@@ -5,11 +5,16 @@ var diaNum = 0;
 var cash = 0;
 var genRate=0;
 var canPass = false;
+
 //settings for prices
 var miniCost = 10;
+var drugCost = 30;
+var alcCost = 80;
 
 //tracker of stores
 var mini = 1;
+var drug = 0;
+var alc = 0;
 //functions
 
 setInterval(generate,10);
@@ -84,7 +89,28 @@ function buyMini() {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost=Math.round(miniCost*1.1);
-        document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
+        miniCost=Math.round(miniCost*1.2);
+        document.getElementById("minip2").innerHTML = "small drug store |"+miniCost+"| ["+mini+"]";
+    }
+}
+
+function buyDrug(){
+    if(canPass==true&&cash>=drugCost){
+        cash-=drugCost;
+        drug++;
+        genRate+=2;
+        drugCost=Math.round(drugCost*1.2);
+        document.getElementById("regdrug").innerHTML = "regular drug store |"+drugCost+"| ["+drug+"]";
+    }
+}
+
+function buyAlc(){
+    if(canPass==true&&cash>=alcCost){
+        cash-=alcCost;
+        alc++;
+        genRate+=3;
+        alcCost=Math.round(alcCost*1.2);
+        document.getElementById("alc").innerHTML = "illegal alchohol distribution center |"+alcCost+"| ["+alc+"]";
+
     }
 }
