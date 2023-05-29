@@ -3,12 +3,11 @@ body {
 }
 
 #prompt {
-    background-color: black;
+    background-color: #CDCDCD;
     color: white;
     margin-left: 700px;
     height: 75px;
     text-align: left;
-    background-blend-mode: lighten;
 }
 
 #mini {
