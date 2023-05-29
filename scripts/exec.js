@@ -27,7 +27,7 @@ if (diaNum==0) {
     diaNum++;
 }
 else if(diaNum==1) {
-    document.getElementById("msg").innerHTML='>Narrarator: Mr. Gatsby meets a perticular man named Meyer Wolfsheim \r >Meyer Wolfsheim: You are from Oggsford? You have much potential. Would you like to join me and earn lots of money?';
+    document.getElementById("msg").innerHTML='>Narrarator: Mr. Gatsby meets a perticular man named Meyer Wolfsheim \n >Meyer Wolfsheim: You are from Oggsford? You have much potential. Would you like to join me and earn lots of money?';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
    document.getElementById("mini").style.display = "block";
    document.getElementById("NextBut").style.display='none';
