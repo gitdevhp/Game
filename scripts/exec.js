@@ -29,6 +29,8 @@ else if(diaNum==1) {
     document.getElementById("msg").innerHTML='>Narrarator: You have just received a large amount of money. Lets start by starting a small drug store.';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
    document.getElementById("mini").style.display = "block";
+   document.getElementById("NextBut").style.display='none';
+
    baseCash();
     miniCost=25000;
     diaNum++;
@@ -64,6 +66,7 @@ function baseBuy() {
     document.getElementById("CashAmt").innerHTML='Money: '+cash;
     document.getElementById("mini").style.display = "none";
     document.getElementById("minip2").style.display = "block";
+    document.getElementById("NextBut").style.display='block';
     console.log("Base Set");
     miniCost=10;
 }
