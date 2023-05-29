@@ -84,7 +84,7 @@ function buyMini() {
         document.getElementById("NextBut").style.display='block';
         canPass=false;
     }
-    if (cash>=miniCost&&canPass==true) {
+    else if (cash>=miniCost&&canPass==true) {
         cash-=miniCost;
         mini++;
         genRate++;
