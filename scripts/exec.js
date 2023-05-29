@@ -37,18 +37,14 @@ else if(diaNum==2&&cash!=25000){
 else if(diaNum==3){
     diaNum++;
     document.getElementById("msg").innerHTML='>Gatsby Hopes that earning money and being rich will reclaim Daisy for himself...';
-
+    document.getElementById("NextBut").style.display='none';
 }
 else if(diaNum==4){
     diaNum++;
     document.getElementById("msg").innerHTML='>Narrarator: Meyer Wolfsheim beleives that you have learned enough and trusts you to build up a massive illegal trade all across the United States.'
     canPass=true;
+    
 }
-}
-
-if(diaNum==4&&mini==10) {
-    document.getElementById("NextBut").style.display='block';
-    canPass=false;
 }
 
 function baseCash() {
