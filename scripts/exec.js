@@ -8,8 +8,8 @@ var canPass = false;
 
 //settings for prices
 var miniCost = 10;
-var drugCost = 30;
-var alcCost = 80;
+var drugCost = 50;
+var alcCost = 100;
 
 //tracker of stores
 var mini = 1;
