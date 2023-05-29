@@ -24,3 +24,6 @@ body {
     background-color: chartreuse;
     display: block;
 }
+#Step1{
+    display: none;
+}
