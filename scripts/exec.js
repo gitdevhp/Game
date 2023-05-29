@@ -75,13 +75,6 @@ function generate() {
 
 //buy drug stores
 function buyMini() {
-    if (cash>=miniCost&&canPass==true) {
-        cash-=miniCost;
-        mini++;
-        genRate++;
-        miniCost=Math.round(miniCost*1.1);
-        document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
-    }
     if (mini==9&&cash>=miniCost&&canPass==true) {
         cash-=miniCost;
         mini++;
@@ -90,6 +83,12 @@ function buyMini() {
         document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
         document.getElementById("NextBut").style.display='block';
         canPass=false;
-
-}
+    }
+    if (cash>=miniCost&&canPass==true) {
+        cash-=miniCost;
+        mini++;
+        genRate++;
+        miniCost=Math.round(miniCost*1.1);
+        document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
+    }
 }
