@@ -85,7 +85,7 @@ function buyMini() {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost=Math.round(miniCost*1.3);
+        miniCost=Math.round(miniCost*1.5);
         document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
         document.getElementById("NextBut").style.display='block';
         canPass=false;
@@ -94,7 +94,7 @@ function buyMini() {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost=Math.round(miniCost*1.4);
+        miniCost=Math.round(miniCost*1.3);
         document.getElementById("minip2").innerHTML = "small drug store |"+miniCost+"| ["+mini+"]";
     }
 }
