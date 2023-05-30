@@ -69,7 +69,7 @@ function baseBuy() {
     document.getElementById("minip2").style.display = "block";
     document.getElementById("NextBut").style.display='block';
     console.log("Base Set");
-    miniCost=10;
+    miniCost=5;
 }
 }
 
