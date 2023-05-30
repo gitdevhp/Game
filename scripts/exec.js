@@ -116,7 +116,7 @@ function buyAlc(){
         genRate+=3;
         alcCost=Math.round(alcCost*1.4);
         document.getElementById("alc").innerHTML = "illegal alchohol distribution center |"+alcCost+"| ["+alc+"]";
-          document.getElementById("Chicago").style.display="block";
+        document.getElementById("Chicago").style.display="block";
     }
    else if(canPass==true&&cash>=alcCost){
         cash-=alcCost;
