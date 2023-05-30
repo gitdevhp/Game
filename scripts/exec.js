@@ -75,7 +75,7 @@ function baseBuy() {
 
 function generate() {
     cash+=genRate/100;
-    document.getElementById("CashAmt").innerHTML="Money: "+Math.trunc(cash);
+    document.getElementById("CashAmt").innerHTML="Money: "+Math.trunc(cash*100)/100;
     document.getElementById("gen").innerHTML="Earnings per Second: "+genRate;
 }
 
