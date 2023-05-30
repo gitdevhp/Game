@@ -81,11 +81,11 @@ function generate() {
 
 //buy drug stores
 function buyMini() {
-    if (mini==9&&cash>=miniCost&&canPass==true) {
+    if (mini==4&&cash>=miniCost&&canPass==true) {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost=Math.round(miniCost*2);
+        miniCost=Math.round(miniCost*1.5);
         document.getElementById("minip2").innerHTML = "small drug store *"+miniCost+"* ["+mini+"]";
         document.getElementById("NextBut").style.display='block';
         canPass=false;
