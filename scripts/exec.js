@@ -52,6 +52,16 @@ else if(diaNum==4){
     canPass=true;
     document.getElementById("NextBut").style.display='none';
     document.getElementById("Step1").style.display='block';
+    document.getElementById("regdrug").style.display='block';
+    document.getElementById("alc").style.display='block';
+    document.getElementById("house").style.display='block';
+}
+else if(diaNum==5){
+    diaNum++;
+    document.getElementById("msg").innerHTML=">Gatsby takes note of a lakeside house that sits right across from Daisy's House...";
+    document.getElementById("NextBut").style.display='none';
+    document.getElementById("house").innerHTML = 'House in West Egg |Cost: $100,000|'
+    canPass=true;
 }
 }
 
@@ -117,6 +127,8 @@ function buyAlc(){
         alcCost=Math.round(alcCost*1.4);
         document.getElementById("alc").innerHTML = "illegal alchohol distribution center |"+alcCost+"| ["+alc+"]";
         document.getElementById("Chicago").style.display="block";
+        document.getElementById("NextBut").style.display='block';
+        canPass=false;
     }
    else if(canPass==true&&cash>=alcCost){
         cash-=alcCost;
@@ -126,4 +138,7 @@ function buyAlc(){
         document.getElementById("alc").innerHTML = "illegal alchohol distribution center |"+alcCost+"| ["+alc+"]";
 
     }
+}
+function buyHouse(){
+    
 }

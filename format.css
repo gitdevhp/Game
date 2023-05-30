@@ -32,7 +32,7 @@ body {
     size: 30px;
 }
 #house{
-    display: block;
+    display: none;
     margin-left: 350px;
 }
 #Chicago{
