@@ -35,3 +35,8 @@ body {
     display: block;
     margin-left: 350px;
 }
+#Chicago{
+    display: none;
+    background-color: #DA2C38;
+    color: #C59849;
+}
