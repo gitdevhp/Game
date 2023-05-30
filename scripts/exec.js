@@ -7,7 +7,7 @@ var genRate=0;
 var canPass = false;
 
 //settings for prices
-var miniCost = 10;
+var miniCost = 5;
 var drugCost = 50;
 var alcCost = 100;
 
@@ -94,7 +94,7 @@ function buyMini() {
         cash-=miniCost;
         mini++;
         genRate++;
-        miniCost=Math.round(miniCost*1.2);
+        miniCost=Math.round(miniCost*1.4);
         document.getElementById("minip2").innerHTML = "small drug store |"+miniCost+"| ["+mini+"]";
     }
 }
@@ -104,7 +104,7 @@ function buyDrug(){
         cash-=drugCost;
         drug++;
         genRate+=2;
-        drugCost=Math.round(drugCost*1.2);
+        drugCost=Math.round(drugCost*1.3);
         document.getElementById("regdrug").innerHTML = "regular drug store |"+drugCost+"| ["+drug+"]";
     }
 }
