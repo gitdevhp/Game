@@ -74,8 +74,8 @@ function baseBuy() {
 }
 
 function generate() {
-    cash+=Math.trunc(genRate/100);
-    document.getElementById("CashAmt").innerHTML="Money: "+cash;
+    cash+=genRate/100;
+    document.getElementById("CashAmt").innerHTML="Money: "+Math.trunc(cash);
     document.getElementById("gen").innerHTML="Earnings per Second: "+genRate;
 }
 
