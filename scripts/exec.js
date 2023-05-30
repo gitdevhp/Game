@@ -29,15 +29,14 @@ if (diaNum==0) {
 else if(diaNum==1) {
     document.getElementById("msg").innerHTML='>Narrarator: Mr. Gatsby meets a perticular man named Meyer Wolfsheim \n >Meyer Wolfsheim: You are from Oggsford? You have much potential. Would you like to join me and earn lots of money?';
    // document.getElementById("msg").style.pageBreakAfter = 'money.';
-   document.getElementById("mini").style.display = "block";
    document.getElementById("NextBut").style.display='none';
-
    baseCash();
     miniCost=25000;
     diaNum++;
 }
 else if(diaNum==2&&cash!=25000){
     diaNum++;
+    document.getElementById("mini").style.display = "block";
     document.getElementById("msg").innerHTML='>Mr Wolfshiem suggests that Gatsby buys some more small drug stores, its not much but its getting Gatsby closer to Daisy';
     document.getElementById("NextBut").style.display='none';
     canPass=true;
